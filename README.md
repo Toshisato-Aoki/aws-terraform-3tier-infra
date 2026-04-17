@@ -3,9 +3,9 @@
 東京都デジタル人材育成支援事業「インフラ・AWSコース」で学んだ知識を基に構築した、シンプルな3-Tierアーキテクチャです。
 
 ## アーキテクチャ概要
-- **Presentation Tier**: Application Load Balancer + EC2（Webサーバー）
-- **Application Tier**: EC2インスタンス（将来的にアプリをデプロイ）
-- **Data Tier**: RDS MySQL（プライベートサブネット）
+- **Presentation Tier** : EC2（Webサーバー）
+- **Application Tier** : EC2インスタンス（将来的にアプリをデプロイ）
+- **Data Tier** : RDS MySQL（プライベートサブネット）
 
 ## 使用技術
 - Terraform（v1.9+）
