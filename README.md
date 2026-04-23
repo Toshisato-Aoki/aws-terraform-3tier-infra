@@ -22,3 +22,19 @@
 terraform init
 terraform plan
 terraform apply
+
+## 設計意図
+・Web層とDB層を分離し、最小限の通信のみ許可することで基本的なセキュリティを意識しました。
+・Public / Private サブネットを分け、RDS は Private Subnet に配置しました。
+・Terraform により、同じ構成を再現可能な形で管理することを重視しました。
+
+## 学んだこと
+・VPC、サブネット、ルーティング、NAT Gateway の関係
+・Security Group によるアクセス制御の考え方
+・IaCで構成管理する際の再現性と修正しやすさ
+
+## 今後の改善予定
+・ALBの追加
+・Auto Scalingの追加
+・CloudWatchによる監視設定
+・モジュール分割による保守性向上
