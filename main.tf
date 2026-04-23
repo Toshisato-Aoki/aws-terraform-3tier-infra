@@ -58,7 +58,7 @@ resource "aws_db_instance" "db" {
   instance_class       = "db.t3.micro"
   db_name              = "mydb"
   username             = "admin"
-  password             = "Roottest1234!"  
+  password             = "var.db_password"  
   skip_final_snapshot  = true
   publicly_accessible  = false
   db_subnet_group_name = module.vpc.database_subnet_group
